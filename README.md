@@ -1,13 +1,6 @@
 # TROC PRO
 
-## How to run it
 
-**- please ensure you have installed angular cli, otherwise `npm install -g @angular/cli`**
-
-1. git clone https://github.com/haroun001/Troc_Angular
-2. cd Troc_Angular
-3. npm install
-4. ng serve -o (it will automatically open localhost:4200)
 
 
 ## Screenshot
@@ -39,6 +32,14 @@
 ![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/settings.gif)
 
 
+## How to run it
+
+**- please ensure you have installed angular cli, otherwise `npm install -g @angular/cli`**
+
+1. git clone https://github.com/haroun001/Troc_Angular
+2. cd Troc_Angular
+3. npm install
+4. ng serve -o (it will automatically open localhost:4200)
 
 
 
