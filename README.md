@@ -10,20 +10,21 @@
 4. ng serve -o (it will automatically open localhost:4200)
 
 
-
 ## Screenshot
 
 ### Login
 
-hub.com/haroun001/Troc_Angularr/screenshot/dashboard.png)
+
+![Untitled](https://user-images.githubusercontent.com/95385544/149624827-b749bea0-04b2-49d4-9de6-6aff7a64caa2.png)
 
 
 ### Register
+
 ![signup](https://user-images.githubusercontent.com/95385544/149624721-5d96f8c6-3714-47c0-9317-00e3862936d7.png)
 
 
 ### Table
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/table.png)
+
 ![liste](https://user-images.githubusercontent.com/95385544/149624738-49726091-69e9-4a9a-a1ba-151bc1aec41c.png)
 
 
