@@ -18,9 +18,9 @@ Material-design Dashboard
 
 ## Screenshot
 
-### Dashboard
+### Login
 
-![](https://github.com/wangdicoder/angular2-material-dashboard-pro/raw/master/screenshot/dashboard.png)
+![](https://github.com/haroun001/Troc_Angularr/raw/master/screenshot/dashboard.png)
 
 ### Login
 
