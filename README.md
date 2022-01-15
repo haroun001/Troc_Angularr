@@ -20,7 +20,7 @@ Material-design Dashboard
 
 ### Login
 
-![](https://github.com/haroun001/Troc_Angularr/raw/master/screenshot/dashboard.png)
+![](https://github.com/haroun001/Troc_Angularr/tree/master/screenshot/dashboard.png)
 
 ### Login
 
