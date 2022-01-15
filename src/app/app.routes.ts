@@ -16,21 +16,40 @@ import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
 import { LockComponent } from './page/lock/lock.component';
 import { RegisterComponent } from './page/register/register.component';
+import { GestionadminComponent } from './dashboard/gestionadmin/gestionadmin.component';
+import { GestionannoncesComponent } from './dashboard/gestionannonces/gestionannonces.component';
+import { UpdateComponent } from './dashboard/update/update.component';
+import { DeposerComponent } from './dashboard/deposer/deposer.component';
+import { UpdateAnnonceComponent } from './dashboard/update-annonce/update-annonce.component';
+
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'lock', component: LockComponent},
   {path: 'register', component: RegisterComponent},
+  {path: '', component: LoginComponent},
+  {path: 'lock', component: LockComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'dashboard', component: RootComponent, children: [
-    {path: '', component: HomeComponent},
+
     {path: 'profile', component: ProfileComponent},
     {path: 'table', component: TableComponent},
     {path: 'notification', component: NotificationComponent},
-    {path: 'alert', component: SweetAlertComponent},
+    {path: 'deposer', component: DeposerComponent},
+
     {path: 'settings', component: SettingsComponent},
-    {path: 'components/price-table', component: PriceTableComponent},
-    {path: 'components/panels', component: PanelsComponent},
-    {path: 'components/wizard', component: WizardComponent}
+    {path: 'gestionadmin', component: GestionadminComponent},
+    {path: 'gestionannonces', component: GestionannoncesComponent},
+    {path: 'update/:email' , component: UpdateComponent},
+    {path: 'update-annonce/:id' , component: UpdateAnnonceComponent},
+    
+  ]},
+  {path: 'visiteur', component: RootComponent, children: [
+
+    {path: 'profile', component: ProfileComponent},
+    {path: 'table', component: TableComponent},
+   
+    
   ]}
 ];
 

@@ -1,0 +1,41 @@
+<div class="container">
+  <app-navbar title="Table List"></app-navbar>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="material-icons">perm_identity</i>
+        </div>
+        <div class="card-content">
+          <h4 class="card-title">Gestion Users</h4>
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="text-primary">
+                <tr>
+                  <th>id</th>
+                  <th>nom</th>
+                  <th>prenom</th>
+                  <th>email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor=" let user of user ">
+                  <td>{{user.id}}</td>
+                  <td>{{user.nom}}</td>
+                  <td>{{user.prenom}}</td>
+                  <td >{{user.email}}</td>
+
+
+                  <td><button (click) = "(updateEmployee(user.email))" type="button" class="btn btn-info">UPDATE</button>
+                    <td><button (click) = "(deleteEmployee(user.email))" class="btn btn-danger">SUPPRIMER</button></td>
+
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,3 +1,4 @@
+import { Back } from './models/back.model';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -8,7 +9,7 @@ import { MatButtonModule, MatRadioModule, MatInputModule, MatMenuModule, MatChec
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { HomeComponent } from './dashboard/home/home.component';
+
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import 'hammerjs';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -17,7 +18,6 @@ import { ImagecardComponent } from './shared/imagecard/imagecard.component';
 import { TableComponent } from './dashboard/table/table.component';
 import { NotificationComponent } from './dashboard/notification/notification.component';
 import { MsgIconBtnComponent } from './shared/msgiconbtn/msgiconbtn.component';
-import { SweetAlertComponent } from './dashboard/sweetalert/sweetalert.component';
 import { LoginComponent } from './page/login/login.component';
 import { RootComponent } from './dashboard/root/root.component';
 import { RegisterComponent } from './page/register/register.component';
@@ -25,17 +25,27 @@ import { LockComponent } from './page/lock/lock.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
-import { PriceTableComponent } from './dashboard/component/pricetable/pricetable.component';
-import { PanelsComponent } from './dashboard/component/panels/panels.component';
 
 import { SettingsService } from './services/settings.service';
-import { WizardComponent } from './dashboard/component/wizard/wizard.component';
+import { GestionadminComponent } from './dashboard/gestionadmin/gestionadmin.component';
+import { GestionannoncesComponent } from './dashboard/gestionannonces/gestionannonces.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateComponent } from './dashboard/update/update.component';
+import { DeposerComponent } from './dashboard/deposer/deposer.component';
+import { UpdateAnnonceComponent } from './dashboard/update-annonce/update-annonce.component';
+
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    HomeComponent,
+
     ProfileComponent,
     NavbarComponent,
     FigurecardComponent,
@@ -43,7 +53,7 @@ import { WizardComponent } from './dashboard/component/wizard/wizard.component';
     TableComponent,
     NotificationComponent,
     MsgIconBtnComponent,
-    SweetAlertComponent,
+
     LoginComponent,
     RootComponent,
     RegisterComponent,
@@ -51,14 +61,19 @@ import { WizardComponent } from './dashboard/component/wizard/wizard.component';
     HeaderComponent,
     FooterComponent,
     SettingsComponent,
-    PriceTableComponent,
-    PanelsComponent,
-    WizardComponent
+    GestionadminComponent,
+    GestionannoncesComponent,
+    UpdateComponent,
+    DeposerComponent,
+    UpdateAnnonceComponent,
+   
+
   ],
   imports: [
     BrowserModule,
+    
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     routing,
     BrowserAnimationsModule,
     MatButtonModule,

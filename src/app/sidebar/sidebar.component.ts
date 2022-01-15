@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit, AfterViewInit, OnDestroy {
   public dividerBgColor: string;
   constructor(public settingsService: SettingsService) {
     this.menuItems = ROUTES;
-    this.activeFontColor = 'rgba(0,0,0,.6)';
+    this.activeFontColor = 'rgba(255,255,255,255)';
     this.normalFontColor = 'rgba(255,255,255,.8)';
     this.dividerBgColor = 'rgba(255, 255, 255, 0.5)';
   }

@@ -1,0 +1,46 @@
+<div class="container">
+  <app-navbar title="Table List"></app-navbar>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="material-icons">assignment</i>
+          
+        </div>
+        <div class="card-content">
+          <h4 class="card-title">Gestion Annonce</h4>
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="text-primary">
+                <tr>
+                  <th>id</th>
+                  <th>type</th>
+                  <th>etat</th>
+                  
+                  <th>description</th>
+                  <th>ruburique</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor=" let p of annonce ">
+                  <td>{{p.id}}</td>
+                  <td>{{p.type}}</td>
+                  <td>{{p.etat}}</td>
+                  
+                  <td >{{p.commentaire}}</td>
+                  <td >{{p.rubirique}}</td>
+
+                  <td>
+                    <button (click) = "updateEmployee(p.id)" class = "btn btn-info"> Update</button>
+                    <button (click) = "(deleteEmployee(p.id))" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
